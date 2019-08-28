@@ -27,9 +27,3 @@ stages:
         dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
-- task: Docker@2
-  inputs:
-    containerRegistry: 'DockerHubName'
-    repository: 'mihirnathpandya/testing'
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
